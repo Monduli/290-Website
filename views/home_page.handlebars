@@ -1,0 +1,142 @@
+	<!-- Code from W3Schools and edited to fit needs -->
+	<div class="navibar">
+	<a class="active" href="/">Home</a>
+	<a href="/survey">Survey</a>
+	<a href="/characters">Characters</a>
+	<a href="/downloads">Downloads</a>
+	<a href="/otherprojects">Other Projects</a>
+	<a href="/about">About</a>
+	</div>
+
+<h1><span class="title">Welcome to the Cafe!</span></h1>
+
+<style>
+* {box-sizing:border-box}
+
+.desc {
+	overflow:scroll;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: 50%;
+	height:200px;
+	display: block;
+	border: 3px solid #000000;
+	text-align: center;
+	background: orange;
+	font-size: 100%;
+}
+ul {
+	text-align:left;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active {
+  background-color: #717171;
+}
+
+</style>
+<div class="slideshow-container">
+
+	<div class="slides">
+	<img src="pc1.PNG" style="width:100%">
+	</div>
+
+	<div class="slides">
+	<img src="paint-cafe-2.png" style="width:100%">
+	</div>
+
+	<div class="slides">
+	<img src="paint-cafe-3.png" style="width:100%">
+	</div>
+
+	<div class="slides">
+	<img src="paint-cafe-4.png" style="width:100%">
+	</div>
+
+	<div class="slides">
+	<img src="paint-cafe-5.PNG" style="width:100%">
+	</div>
+
+	<div class="slides">
+	<img src="paint-cafe-7.PNG" style="width:100%">
+	</div>
+
+	<div class="slides">
+	<img src="paint-cafe-8.PNG" style="width:100%">
+	</div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<script>
+//Citation: Script typed over from W3Schools and edited
+var slideIndex = 1;
+showSlides(slideIndex);
+var x = 0;
+
+// Next/previous controls
+function plusSlides(n) {
+  	showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+	clearTimeout(x)
+	var i;
+	var slides = document.getElementsByClassName("slides");
+	if (n < 1) {slideIndex = slides.length}
+	/* init slides */
+	for (i = 0; i < slides.length; i++) {
+	  slides[i].style.display = "none";
+	}
+	/* loop back to beginning */
+	if (slideIndex > slides.length) {slideIndex = 1}
+	slides[slideIndex-1].style.display = "block";
+	x = setTimeout(showSlides, 5000);
+	slideIndex++;
+}
+</script>
+
+<div class="desc">
+	Welcome to the Cafe! Become a patron at Santos' most premium seedy tavern. Many people will come in from day to day, and you're the centerpiece of their gossip!
+	<ul>
+		<li>Listen to the tales of a wide fantasy cast, ranging from a dutiful royal bodyguard to a cartographer from another continent</li>
+		<li>The game changes in real time, so the patrons in the Cafe are never the same</li>
+		<li>Collect various items from their journeys to display in your own private room</li>
+		<li>Thousands of lines of dialogue</li>
+	</ul>
+	You're always welcome, so stop on in!
+</div>
