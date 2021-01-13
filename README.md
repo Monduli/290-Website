@@ -1,6 +1,9 @@
 # 290-Website
- Website project for CS290 at Oregon State University. Below are the instructions given for the project.
- ======================================
+
+Website project for CS290 at Oregon State University. Below are the instructions given for the project.
+
+//////////////////////////////////////////////////////////////////////
+
 In this project, you need to use HTML/CSS and JavaScript to build a simple website and publish it online. You can build a personal website for yourself, or a website of a small business or organization like a farm, a restaurant, a park, a hotel, a baseball club, or a website of some tutorials, showing skills that you have expertise in and want to share with others. You have a lot of freedom to determine the details of your website as long as you meet the requirements.  The theme doesn’t need to be real. Be creative! You will have three weeks (w6-w8) to work on this project. 
 
 Requirements:
